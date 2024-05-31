@@ -1,0 +1,40 @@
+name: med_with_tech
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.2
+  get_it: ^7.6.7
+  firebase_core: ^2.31.1
+  firebase_auth: ^4.19.6
+  firebase_storage: ^11.7.6
+  cloud_firestore: ^4.17.4
+  uuid: ^4.4.0
+  shared_preferences: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  very_good_analysis: ^5.1.0
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_logo.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
