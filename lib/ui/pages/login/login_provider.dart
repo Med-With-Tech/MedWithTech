@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:med_with_tech/ui/pages/login/login_page.dart';
-import 'package:med_with_tech/ui/pages/login/login_view_model.dart';
-import 'package:provider/provider.dart';
+import 'package:med_with_tech/export.dart';
 
 class LoginProvider extends StatelessWidget {
   const LoginProvider({super.key});

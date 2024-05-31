@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:med_with_tech/base/base_stateful_state.dart';
-import 'package:med_with_tech/ui/pages/login/login_view_model.dart';
-import 'package:provider/provider.dart';
+import 'package:med_with_tech/export.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -25,9 +22,9 @@ class _LoginPageState extends BaseStatefulState<LoginPage> {
       body: Center(
         child: TextButton(
           onPressed: () {
-            //appRoutes.navigateTo(Routes.home);
+            appRoutes.navigateTo(Routes.home);
           },
-          child: const Text('Home Git!!!'),
+          child: const Text('Home Go!!!'),
         ),
       ),
     );

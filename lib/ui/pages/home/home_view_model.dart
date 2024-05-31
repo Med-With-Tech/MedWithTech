@@ -1,4 +1,4 @@
-import 'package:med_with_tech/base/base_view_model.dart';
+import 'package:med_with_tech/export.dart';
 
 class HomeViewModel extends BaseViewModel {
 

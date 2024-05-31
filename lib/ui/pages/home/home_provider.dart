@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:med_with_tech/ui/pages/home/home_page.dart';
-import 'package:med_with_tech/ui/pages/home/home_view_model.dart';
-import 'package:provider/provider.dart';
+import 'package:med_with_tech/export.dart';
 
 class HomeProvider extends StatelessWidget {
   const HomeProvider({super.key});

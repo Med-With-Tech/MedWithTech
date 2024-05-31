@@ -1,8 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:med_with_tech/ui/pages/home/home_provider.dart';
+import 'package:med_with_tech/export.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const MyApp());
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+    ),
+  );
+  await setupLocator();
 }
 
 class MyApp extends StatelessWidget {
@@ -11,12 +19,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Med With Tech',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeProvider(),
+      debugShowCheckedModeBanner: false,
+      navigatorKey: locator<AppRoutes>().baseNavigatorKey,
+      onGenerateRoute: Routes.generateRoute,
+      initialRoute: Routes.login,
+      builder: (context, widget) {
+        return widget!;
+      },
     );
   }
 }
