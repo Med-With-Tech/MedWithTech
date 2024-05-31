@@ -1,3 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:med_with_tech/export.dart';
 
-class BaseViewModel extends ChangeNotifier {}
+class BaseViewModel extends ChangeNotifier {
+
+}
